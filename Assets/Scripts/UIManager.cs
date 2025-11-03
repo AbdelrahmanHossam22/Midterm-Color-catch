@@ -53,7 +53,7 @@ public class UIManager : MonoBehaviour
     {
         if (scoreText != null)
         {
-            // ✅ Display score even if negative
+            //  Display score even if negative
             scoreText.text = "Score: " + score.ToString();
         }
     }

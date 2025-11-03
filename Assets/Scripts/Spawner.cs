@@ -26,9 +26,7 @@ public class Spawner : MonoBehaviour
         SpawnAll();
     }
 
-    /// <summary>
     /// Spawns all colors in equal numbers.
-    /// </summary>
     public void SpawnAll()
     {
         spawnedCollectibles.Clear();
@@ -40,9 +38,7 @@ public class Spawner : MonoBehaviour
         Debug.Log($"✅ Spawned {spawnedCollectibles.Count} total collectibles.");
     }
 
-    /// <summary>
     /// Spawns collectibles of a given color within the area bounds.
-    /// </summary>
     private void SpawnColor(Collectible.ColorType color, int count)
     {
         if (collectiblePrefab == null)

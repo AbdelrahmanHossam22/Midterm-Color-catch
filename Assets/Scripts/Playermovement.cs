@@ -29,5 +29,5 @@ public class PlayerMovement : MonoBehaviour
         rb.AddForce(movement * speed);
     }
 
-    // ❌ REMOVE OnTriggerEnter — Collectible handles it.
+    //  REMOVE OnTriggerEnter — Collectible handles it.
 }

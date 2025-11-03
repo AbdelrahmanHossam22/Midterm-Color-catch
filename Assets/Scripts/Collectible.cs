@@ -30,9 +30,7 @@ public class Collectible : MonoBehaviour
             instanceMaterial = rend.material;
     }
 
-    /// <summary>
     /// Called by Spawner or GameManager to set this collectible's color visually.
-    /// </summary>
     public void SetColorVisual()
     {
         if (rend == null) rend = GetComponent<Renderer>();
@@ -56,7 +54,7 @@ public class Collectible : MonoBehaviour
 
     void Update()
     {
-        // 🔁 Rotate smoothly around the Y-axis (for visibility and motion)
+        // Rotate smoothly around the Y-axis (for visibility and motion)
         transform.Rotate(Vector3.up * spinSpeed * Time.deltaTime, Space.World);
     }
 

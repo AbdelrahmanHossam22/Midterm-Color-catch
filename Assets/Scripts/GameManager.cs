@@ -285,13 +285,13 @@ public class GameManager : MonoBehaviour
 
         Debug.Log($"⏰ Game Over! Final Score: {score}");
 
-        // ✅ Stop background music using the assigned SFX Manager
+        //  Stop background music using the assigned SFX Manager
         if (sfxManager != null && sfxManager.isPlaying)
             sfxManager.Stop();
         else
             Debug.Log("No SFX Manager assigned or already stopped.");
 
-        // ✅ Show Game Over panel and final score
+        //  Show Game Over panel and final score
         var ui = UnityEngine.Object.FindFirstObjectByType<UIManager>();
         if (ui != null)
             ui.ShowGameOver(score);
